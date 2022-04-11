@@ -2,4 +2,58 @@ body {
     font-family: sans-serif;
     text-align: center;
     font-size: 2em;
-}
+    margin: 0;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    section {
+        height: 100vh;
+        width: 100%;
+    }
+    
+    #brands {
+        text-align: center;
+    }
+    
+    .brandContainer {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin: 30px 20% 20px;
+        align-content: center;
+        justify-content: space-between;
+    }
+    #mmbnLogo {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .navBar {
+        width: 100vw;
+    
+        background-color: green;
+        margin: 0;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        text-align: left;
+    }
+    
+    .navLink {
+        display: inline-block;
+        float: right;
+        margin: 0 10px;
+    }
+    
+    .navItems {
+        padding: 20px 5% 20px;
+        margin: 0;
+    }
+    
+    .navItems a {
+        color: blue;
+        text-decoration: none;
+    
+    }
