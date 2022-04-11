@@ -39,11 +39,12 @@ section {
     position: relative;
     display: inline-block;
     width: 75px;
+    height: 75px;
     }
     
-    .mainTitle {
-        font-size: 3em;
-        margin-top: 10%;
+.mainTitle {
+    font-size: 3em;
+    margin-top: 10%;
 }
 
 .navBar {
@@ -62,13 +63,13 @@ section {
 }
 
 .navItems {
-padding: 50px 5% 20px;
-margin: 0;
+    padding: 50px 5% 20px;
+    margin: 0;
 }
 
 .navItems a {
-color: white;
-text-decoration: none;
+    color: white;
+    text-decoration: none;
 
 }
 
