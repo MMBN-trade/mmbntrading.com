@@ -1,0 +1,22 @@
+{
+  "name": "mmbntrading.com",
+  "version": "1.0.0",
+  "description": "website for MMBN Trading",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MMBN-trade/mmbntrading.com.git"
+  },
+  "author": "spaceCabbage",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MMBN-trade/mmbntrading.com/issues"
+  },
+  "homepage": "https://github.com/MMBN-trade/mmbntrading.com#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

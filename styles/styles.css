@@ -1,7 +1,6 @@
 body {
     font-family: sans-serif;
     text-align: center;
-    font-size: 2em;
     margin: 0;
     }
     
@@ -21,7 +20,6 @@ body {
     .brandContainer {
         display: grid;
         grid-template-columns: auto auto auto auto;
-        margin: 30px 20% 20px;
         align-content: center;
         justify-content: space-between;
     }
@@ -56,4 +54,14 @@ body {
         color: blue;
         text-decoration: none;
     
+    }
+    .navItems a:hover {
+        color: red;
+        text-decoration: underline;
+    
+    }
+    
+    .regPage {
+        margin: 0 auto 0;
+        width: 65vw;
     }
