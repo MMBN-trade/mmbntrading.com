@@ -3,6 +3,10 @@ body {
     text-align: center;
     margin: 0;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
     
 li {
     list-style: none;
@@ -60,7 +64,7 @@ section {
     display: inline-block;
     float: right;
     margin: 0 10px;
-}
+}  
 
 .navItems {
     padding: 50px 5% 20px;
