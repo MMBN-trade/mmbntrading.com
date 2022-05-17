@@ -7,7 +7,6 @@
 
 body {
     font-family: sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -26,15 +25,45 @@ body {
 }
 
 #mmbnLogo {
-    width: 185px;
-    height: 175px;
+    width: 11vw;
+    height: auto;
+    position: fixed;
+    padding: 30px;
+    filter: drop-shadow(3px 3px 5px #000);
+}
+
+.darkPart {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark);
+
+}
+
+.mainPart {
+    text-align: center;
+    padding: 100px auto 0;
+    position: relative;
+    top: 25vh;
+    width: 65vw;
+    margin: 0 auto;
+    font-size: 2em;
+
+}
+
+.mainTitle {
+    margin: 0;
 }
 
 .navBar {
-    
+    position: absolute;
+    right: 0;
 }
 
-
+ 
+ .navLink {
+    display: inline-block;
+    padding: 20px;
+ }
 
 
 
