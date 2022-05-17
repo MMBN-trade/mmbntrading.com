@@ -1,12 +1,12 @@
 :root {
     --mred: #dc1414;
     --mblue: rgba(29, 78, 143, 0.644);
-    --dark: rgb(65, 65, 65);
-    --lite: rgb(207, 207, 207);
+    --dark: #414141;
+    --lite: #cfcfcf;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -25,6 +25,7 @@ button:hover {
     color: var(--dark);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.06'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     margin: 0;
+    padding: 0;
     width: 100vw;
     height: 100vh;
 }
@@ -34,8 +35,15 @@ button:hover {
     height: auto;
     position: fixed;
     padding: 35px 0 0 45px;
-    filter: drop-shadow(0 0 5px var(--dark));
+    /* filter: drop-shadow(0 0 5px var(--dark)); */
+    z-index: 100;
 }
+.aboutUs {
+    width: 50vw;
+    margin: 0px auto;
+    padding-top: 25vh;
+}
+
 
 .bPri {
     background-color: var(--lite);
@@ -61,6 +69,10 @@ button:hover {
 
 }
 
+.curves {
+    position: relative;
+}
+
 .darkPart {
     width: 100vw;
     height: 100vh;
@@ -72,6 +84,14 @@ button:hover {
     color: var(--mred);
     font-size: 1.25em;
 }
+
+.litePart {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--lite);
+
+}
+
 
 .mainPart {
     text-align: center;
@@ -93,10 +113,14 @@ button:hover {
     right: 0;
 }
 
+.navItems {
+    margin-right: 30px;
+}
+
  
  .navLink {
     display: inline-block;
-    padding: 20px;
+    padding: 30px;
  }
 
 .scrollGlyph {
@@ -107,6 +131,56 @@ button:hover {
     margin-bottom: 8vh;
 }
 
+li.navLink.active > a, li.navLink > a:hover{
+    color: var(--mred);
+}
 
+li.navLink > a {
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+ 
+}
 
+.custom-shape-divider-bottom-1652792741 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
+.custom-shape-divider-bottom-1652792741 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 95px;
+}
+
+.custom-shape-divider-bottom-1652792741 .shape-fill {
+    fill: #414141;
+}
+
+.custom-shape-divider-bottom-1652792955 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1652792955 svg {
+    position: relative;
+    display: block;
+    width: calc(153% + 1.3px);
+    height: 137px;
+}
+
+.custom-shape-divider-bottom-1652792955 .shape-fill {
+    fill: #CFCFCF;
+}
