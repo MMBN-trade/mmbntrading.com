@@ -1,6 +1,6 @@
 :root {
     --mred: #dc1414;
-    --mblue: rgba(29, 78, 143, 0.644);
+    --mblue: #1d4e8f;
     --dark: #414141;
     --lite: #cfcfcf;
 }
@@ -69,14 +69,24 @@ button:hover {
 
 }
 
+.bubbles {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    position: absolute;
+}
+
 .curves {
     position: relative;
+    z-index: 2;
 }
 
 .darkPart {
     width: 100vw;
     height: 100vh;
     background-color: var(--dark);
+    /* background-image: url(/images/bubble.svg); */
+    color: var(--lite)
 
 }
 
@@ -107,6 +117,8 @@ button:hover {
 .mainTitle {
     margin: 0;
 }
+
+
 
 .navBar {
     position: absolute;
