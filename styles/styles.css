@@ -124,7 +124,12 @@ button:hover {
  }
 
 .scrollGlyph {
-    margin-top: 25vh;
+    margin-top: 20vh;
+}
+
+.scroller {
+    color: var(--mred);
+    font-weight: 400;
 }
 
 .subTitle {
@@ -142,6 +147,8 @@ li.navLink > a {
     font-weight: bold;
  
 }
+
+/* page transition scvg css  */
 
 .custom-shape-divider-bottom-1652792741 {
     position: absolute;
