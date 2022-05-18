@@ -28,6 +28,8 @@ button:hover {
     padding: 0;
     width: 100vw;
     height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 #mmbnLogo {
@@ -81,6 +83,12 @@ button:hover {
     z-index: 2;
 }
 
+.cFormContainer {
+    width: 50vw;
+    margin: 0 auto 0;
+    text-align: center;
+}
+
 .darkPart {
     width: 100vw;
     height: 100vh;
@@ -93,6 +101,17 @@ button:hover {
 .emText {
     color: var(--mred);
     font-size: 1.25em;
+}
+.footer {
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.foote {
+    margin: 0 auto;
 }
 
 .litePart {

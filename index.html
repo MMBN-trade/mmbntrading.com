@@ -27,9 +27,9 @@
 <!-- nav bar  -->
 <nav class="navBar">
     <ul class="navItems">
-        <li class="navLink active"><a href="#">Home</a></li>
-        <li class="navLink"><a href="#">Log In</a></li>
-        <li class="navLink"><a href="#">Contact</a></li>
+        <li class="navLink active"><a href="#home">Home</a></li>
+        <li class="navLink"><a href="#about">About Us</a></li>
+        <li class="navLink"><a href="#contact">Contact</a></li>
         
     </ul>
     
@@ -41,8 +41,8 @@
     <div class="mainPart">
         <h1 class="mainTitle">MMBN Trading</h1>
         <h3 class="subTitle">Find The products you <span class="emText">Need</span><br> at the price you <span class="emText">Want</span></h3>
-        <button class="bPri">About Us</button>
-        <button class="bSec" >Sign Up</button>
+        <!-- <button class="bPri">About Us</button>
+        <button class="bSec" >Sign Up</button> -->
         <div class="scrollGlyph">
             <h5 class="scroller">Scroll</h5>
             <img src="chevron.svg" alt="down arrow">
@@ -62,7 +62,8 @@
 <section id="about" class="darkPart">
     <div class="aboutUs">
         <h4 class="whyUs">We help businesses that care about the future</h4>
-        <div id="firebaseui-auth-container"></div>
+        
+        <div id="loader">Loading...</div>
     </div>   
 
 </section>
@@ -75,20 +76,20 @@
         </svg>
     </div>
 </div>
-<section class="litePart">
+<section class="litePart footer" id="contact">
     <!-- <img class="bubbles" src="images/bubbles.svg" alt=""> -->
    
     <div class="cFormContainer">
         
-        <form action="mailto:yehuda@mmbntrade.com" method="post" enctype=”multipart/form-data” name="contactForm">
+        <form action="mailer.php" method="post" id="ajax-contact">
            
            
             <h2>Contact Us</h2>
-            <input type="text" name="fullName" id="cName" placeholder="Name">
+            <input type="text" name="fullName" id="cName" placeholder="Name" required>
 
             <br>
             
-            <input type="text" name="email" id="cEmail" placeholder="Email">
+            <input type="text" name="email" id="cEmail" placeholder="Email" required>
 
             <br>
 
@@ -97,14 +98,18 @@
             <br>
 
             <input type="submit" value="Submit">
+
+            <div id="form_messages"></div>
         </form>
      </div>   
-
+    <footer class="foote">
+        <p class="footText">&copy 2022 MMBNTRADING LLC. All rights reserved.</p>
+    </footer>
 </section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 <script src="index.js"></script>
 <script src="scroller.js"></script>
-<script src="fire.js"></script>
+
 </body>
 </html>
