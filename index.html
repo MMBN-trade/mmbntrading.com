@@ -28,7 +28,7 @@
 <nav class="navBar">
     <ul class="navItems">
         <li class="navLink active"><a href="#">Home</a></li>
-        <li class="navLink"><a href="#">Sign In</a></li>
+        <li class="navLink"><a href="#">Log In</a></li>
         <li class="navLink"><a href="#">Contact</a></li>
         
     </ul>
@@ -42,7 +42,7 @@
         <h1 class="mainTitle">MMBN Trading</h1>
         <h3 class="subTitle">Find The products you <span class="emText">Need</span><br> at the price you <span class="emText">Want</span></h3>
         <button class="bPri">About Us</button>
-        <button class="bSec" >Our Brands</button>
+        <button class="bSec" >Sign Up</button>
         <div class="scrollGlyph">
             <h5 class="scroller">Scroll</h5>
             <img src="chevron.svg" alt="down arrow">
@@ -61,8 +61,8 @@
    
 <section id="about" class="darkPart">
     <div class="aboutUs">
-        <h4 class="whyUs">Weh help businesses that care about the fututre</h4>
-    
+        <h4 class="whyUs">We help businesses that care about the future</h4>
+        <div id="firebaseui-auth-container"></div>
     </div>   
 
 </section>
@@ -76,15 +76,35 @@
     </div>
 </div>
 <section class="litePart">
-    <img class="bubbles" src="images/bubbles.svg" alt="">
-    <div class="aboutUs">
+    <!-- <img class="bubbles" src="images/bubbles.svg" alt=""> -->
+   
+    <div class="cFormContainer">
         
-        <h4 class="whyUs2">We assist business such as school, universities, real estate management and others in getting access to all the products and vendors that they need at prices better than the competition</h4>
+        <form action="mailto:yehuda@mmbntrade.com" method="post" enctype=”multipart/form-data” name="contactForm">
+           
+           
+            <h2>Contact Us</h2>
+            <input type="text" name="fullName" id="cName" placeholder="Name">
+
+            <br>
+            
+            <input type="text" name="email" id="cEmail" placeholder="Email">
+
+            <br>
+
+            <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Write something here"></textarea>
+            
+            <br>
+
+            <input type="submit" value="Submit">
+        </form>
      </div>   
 
 </section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="index.js"></script>
+<script src="scroller.js"></script>
+<script src="fire.js"></script>
 </body>
 </html>
