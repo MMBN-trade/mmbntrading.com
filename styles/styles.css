@@ -77,6 +77,17 @@ button:hover {
     margin: 0 auto;
     position: absolute;
 }
+.card {
+    width: 400px;
+    height: 500px;
+    margin: 10px 20px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+    padding: 25px 15px;
+}
+
 
 .curves {
     position: relative;
@@ -149,10 +160,19 @@ button:hover {
 }
 
  
- .navLink {
+.navLink {
     display: inline-block;
     padding: 30px;
- }
+}
+
+.ourMission {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 15vh;
+    position: relative;
+}
 
 .scrollGlyph {
     margin-top: 20vh;
@@ -165,6 +185,12 @@ button:hover {
 
 .subTitle {
     margin-bottom: 8vh;
+}
+
+.title2 {
+    margin: 0px auto;
+    padding: 50px 10px 0;
+    text-align: center;
 }
 
 li.navLink.active > a, li.navLink > a:hover{
