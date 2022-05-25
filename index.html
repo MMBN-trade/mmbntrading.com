@@ -13,7 +13,7 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
@@ -23,24 +23,41 @@
 
 
 <body>
+    <img id="mmbnLogo" src="mmbmlogo2.svg" alt="logo">
 
 <!-- nav bar  -->
-<nav class="navBar">
+<nav id="main-menu">
+    
     <ul class="navItems">
-        <li class="navLink active"><a href="#home">Home</a></li>
-        <li class="navLink"><a href="#about">About Us</a></li>
-        <li class="navLink"><a href="#contact">Contact</a></li>
+        <li class=""><a href="#home">Home</a></li>
+        <li class=""><a href="#about">About Us</a></li>
+        <li class=""><a href="#contact">Contact</a></li>
         
     </ul>
     
 </nav>
-<img id="mmbnLogo" src="mmbmlogo2.svg" alt="logo">
+
+<!-- responsive hamburger menu  -->
+<input type="checkbox" class="burger-shower" id="hamburger-input" />
+<label for="hamburger-input" id="hamburger-menu">
+    <nav id="sidebar-menu">
+        <h3>Menu</h3>
+        <ul class="">
+            <li class=""><a href="#home">Home</a></li>
+            <li class=""><a href="#about">About Us</a></li>
+            <li class=""><a href="#contact">Contact</a></li>
+            
+        </ul>
+    </nav>
+</label>
+<div class="overlay"></div>
+
 
 <!-- Main Page -->
 <section id="home">
     <div class="mainPart">
         <h1 class="mainTitle">MMBN Trading</h1>
-        <h3 class="subTitle">Find The products you <span class="emText">Need</span><br> at the price you <span class="emText">Want</span></h3>
+        <h3 class="subTitle">Find The products you <span class="emText">Need</span><br> at the price you <span class="emText">Want!</span></h3>
         <!-- <button class="bPri">About Us</button>
         <button class="bSec" >Sign Up</button> -->
         <div class="scrollGlyph">
@@ -61,14 +78,22 @@
    
 <section id="about" class="darkPart">
     
-    <h2 class="title2">Our Mission</h2>
-    <div class="ourMission">
-    
-        <div class="card">Step 1</div>
-        <div class="card">Step 2</div>
-        <div class="card">Step 3</div>
+    <div class="aboutInfo">
+
+        <h1 class="tagline">Tired of Supply Chain issues?</h1>
         
+        <h3 class="tagline2">Our Specialists will help</h3>
+        <ul class="helpList">
+            <li class="helpItem">Evaluate Suppliers.</li>
+            <li class="helpItem">Ensure a Quality Product.</li>
+            <li class="helpItem">Negotiate Lower prices.</li>
+            <li class="helpItem">Improve Compliance</li>
+        </ul>
+
+        <h3 class="tagline">Our customers include<br>Schools, Universities, Offices and many others</h3>
+        <h4 class="tagline">Because if you need it, we can source it it</h4>
     </div>
+        
 
 </section>
 
