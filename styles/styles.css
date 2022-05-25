@@ -98,7 +98,6 @@ button:hover {
     width: 100vw;
     height: 100vh;
     background-color: var(--dark);
-    /* background-image: url(/images/bubble.svg); */
     color: var(--lite)
 
 }
@@ -141,8 +140,9 @@ button:hover {
   height: 100px;
   margin: 0px;  
   z-index: 9;
-  position: absolute;
+  position: fixed;
   right: 0;
+  mix-blend-mode: difference;
 }
 
 #main-menu ul {
@@ -159,14 +159,15 @@ button:hover {
 }
 
 #main-menu li {
-  list-style-type: none;
-  font-size: 2rem;
-  padding: 20px;
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 20px;
 }
 
 #main-menu a {
     text-decoration: none;
-    color: var(--dark);
+    color: white;
+    /* color: var(--dark); */
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
@@ -174,7 +175,7 @@ button:hover {
 #main-menu a:hover {
   text-decoration: overline;
   text-decoration-thickness: 10px;
-  color: var(--mred);
+  color: #23ebeb;
 }
 
 #hamburger-input{
@@ -208,7 +209,6 @@ button:hover {
     visibilty: hidden;
     position: fixed;
     z-index: 10;
-
     top: 0;
     right: -250px;
     width: 200px;
@@ -220,14 +220,14 @@ button:hover {
     text-align: right;
     color: var(--lite);
 }
-
-#hamburger-menu h3 {
-  font-size: 2.2rem;
-  padding-top: 40px;
+#hamburger-menu img {
+    width: 25%;
+    padding: 20px 10px
 }
 
-#hamburger-menu ul {
-  padding-left: 0px;
+#hamburger-menu h3 {
+  font-size: 2rem;
+ 
 }
 
 #hamburger-menu li {
@@ -276,7 +276,7 @@ button:hover {
 .helpList {
     text-align: left;
     margin: 0 auto;
-    width: 50%
+    width: 40%
 }
 
 .litePart {
@@ -288,27 +288,18 @@ button:hover {
 
 
 .mainPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     text-align: center;
     padding: 0 auto;
     position: relative;
-    top: 25vh;
+    top: 15vh;
     width: 50vw;
     margin: 0 auto;
     font-size: 2em;
+    height: 60vh
 
-}
-
-.mainTitle {
-    margin: 0;
-}
-
-
-.ourMission {
-
-}
-
-.scrollGlyph {
-    margin-top: 20vh;
 }
 
 .scroller {
@@ -316,9 +307,6 @@ button:hover {
     font-weight: 400;
 }
 
-.subTitle {
-    margin-bottom: 8vh;
-}
 
 .title2 {
     margin: 0px auto;
@@ -326,19 +314,9 @@ button:hover {
     text-align: center;
 }
 
-li.navLink.active > a, li.navLink > a:hover{
-    color: var(--mred);
-}
 
-li.navLink > a {
-    color: var(--dark);
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: bold;
- 
-}
 
-/* page transition scvg css  */
+/* curves css  */
 
 .custom-shape-divider-bottom-1652792741 {
     position: absolute;
