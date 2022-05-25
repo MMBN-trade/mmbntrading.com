@@ -106,7 +106,7 @@ button:hover {
     color: var(--mred);
     font-size: 1.25em;
 }
-.footer {
+.footext {
   /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
@@ -118,9 +118,27 @@ button:hover {
     margin: 0 auto;
 }
 
+.infobox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.infocol {
+    height: 650px;
+    width: 500px;
+    background-color: var(--dark);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+
+}
+
 /* hamburger menu css  */
-
-
 .overlay{
     position: fixed;
     top: 0;
@@ -290,7 +308,7 @@ button:hover {
 .mainPart {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     padding: 0 auto;
     position: relative;

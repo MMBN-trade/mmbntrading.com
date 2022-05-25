@@ -23,7 +23,7 @@
 
 
 <body>
-    <img id="mmbnLogo" src="mmbmlogo2.svg" alt="logo">
+    <img id="mmbnLogo" src="/images/mmbmlogo2.svg" alt="logo">
 
 <!-- nav bar  -->
 <nav id="main-menu">
@@ -63,7 +63,7 @@
         <button class="bSec" >Sign Up</button> -->
         <div class="scrollGlyph">
             <h5 class="scroller">Scroll</h5>
-            <img src="chevron.svg" alt="down arrow">
+            <img src="/images/chevron.svg" alt="down arrow">
         </div>
     </div>
 </section>
@@ -109,31 +109,33 @@
     </div>
 </div>
 <section class="litePart footer" id="contact">
-    <!-- <img class="bubbles" src="images/bubbles.svg" alt=""> -->
    
-    <div class="cFormContainer">
-        
-        <form action="mailer.php" method="post" id="ajax-contact">
-           
-           
-            <h2>Contact Us</h2>
-            <input type="text" name="fullName" id="cName" placeholder="Name" required>
+   <div class="infobox">
+        <div class="infocol">
+            <form action="">
+                <h3>Contact Us</h3>
+                <input type="text" name="cName" placeholder="Name">
+                <br>
+                <input type="email" name="cEmail" placeholder="Email">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="infocol">
+            <h3>or give us a call</h3>
+            <div>
+                <h4>Office: 111 222 3333</h4>
+                <h4>Cell: 111 222 3333</h4>
+                <h4>Fax: 111 222 3333</h4>
+            </div>
 
-            <br>
-            
-            <input type="text" name="email" id="cEmail" placeholder="Email" required>
+            <div class="">
+                <h5>Business Hours</h5>
+                <p>Sunday - Friday 8:00am - 6:00pm EST</p>
+            </div>
+       </div>
+   </div>
 
-            <br>
-
-            <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Write something here"></textarea>
-            
-            <br>
-
-            <input type="submit" value="Submit">
-
-            <div id="form_messages"></div>
-        </form>
-     </div>   
     <footer class="foote">
         <p class="footText">&copy 2022 MMBN TRADING LLC. All rights reserved.</p>
     </footer>
