@@ -106,16 +106,15 @@ button:hover {
     color: var(--mred);
     font-size: 1.25em;
 }
-.footext {
-  /* min-height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-}
 
-.foote {
+.footText {
     margin: 0 auto;
+    position: relative;
+    bottom: 0;
+    background-color: var(--lite);
+    text-align: center;
+    padding: 10px 0;
+
 }
 
 .infobox{
@@ -123,20 +122,89 @@ button:hover {
     flex-direction: row;
     justify-content: center;
     flex-flow: wrap;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+  
 }
 
 .infocol {
-    height: 650px;
-    width: 500px;
+   
     background-color: var(--dark);
     margin: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     border-radius: 30px;
+    width: 500px; 
+    padding: 50px 20px 20px;
+    color: var(--lite);
+    text-align: center;
 
 }
+
+
+
+.helpList {
+    text-align: left;
+    margin: 0 auto;
+    width: 40%
+}
+
+.litePart {
+    width: 100vw;
+    height: 70vh;
+    background-color: var(--lite);
+
+}
+
+
+.mainPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 auto;
+    position: relative;
+    top: 15vh;
+    width: 50vw;
+    margin: 0 auto;
+    font-size: 2em;
+    height: 65vh
+
+}
+
+.mainTitle {
+    font-size: 2.5em;
+}
+
+.scroller {
+    color: var(--mred);
+    font-weight: 400;
+}
+
+
+.thirdPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.title2 {
+    margin: 0px auto;
+    padding: 50px 10px 0;
+    text-align: center;
+}
+
+
+
+
+
+/* GEN
+
+
 
 /* hamburger menu css  */
 .overlay{
@@ -289,49 +357,6 @@ button:hover {
       visibility: hidden;
   }
 }
-
-
-.helpList {
-    text-align: left;
-    margin: 0 auto;
-    width: 40%
-}
-
-.litePart {
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--lite);
-
-}
-
-
-.mainPart {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 0 auto;
-    position: relative;
-    top: 15vh;
-    width: 50vw;
-    margin: 0 auto;
-    font-size: 2em;
-    height: 60vh
-
-}
-
-.scroller {
-    color: var(--mred);
-    font-weight: 400;
-}
-
-
-.title2 {
-    margin: 0px auto;
-    padding: 50px 10px 0;
-    text-align: center;
-}
-
 
 
 /* curves css  */
