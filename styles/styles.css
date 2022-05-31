@@ -16,9 +16,19 @@ body {
     display: none;
 }
 
+button {
+    background-color: var(--mred);
+    padding: 15px 35px;
+    border: solid 2px rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 5px;
+}
+
 button:hover {
+    background-color: rgba(0, 0, 0, 0);
     color: var(--mred);
-    box-shadow: 0px 0px 3px var(--dark);
+    border: solid 2px;
+    
 }
 
 #home {
@@ -47,15 +57,48 @@ button:hover {
 }
 
 .aboutInfo {
-    text-align: center;
+    display: grid;
+    grid-template-columns: 3;
+    gap: 10px;
+    grid-auto-rows: 100px, auto;
+    justify-content: center;
+    background-color: white;
+    background-image: url('/images/boat.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
     width: 50vw;
+    height: 70vh;
     margin: 0 auto;
-    /* padding: 30vh 30px; */
+    border-radius: 5px;
+    position: absolute;
+    top: calc(50% + 95vh);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: end;
+    color: black;
+    padding: 25px;
+    box-shadow: 1 1 15 #000;
+    
+}
+
+
+
+.aboutText {
+    
+    grid-column: 2 / span 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 89.2555vh;
+    
 }
+.contactbutt {
+    /* align-self: end; */
+    width: 50%;
+    
+}
+
+
 
 
 .bPri {
@@ -98,7 +141,7 @@ button:hover {
     width: 100vw;
     height: 100vh;
     background-color: var(--dark);
-    color: var(--lite)
+    color: var(--lite);
 
 }
 
@@ -135,13 +178,16 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 30px;
+    border-radius: 5px;
     width: 500px; 
     padding: 50px 20px 20px;
     color: var(--lite);
     text-align: center;
 
 }
+
+
+
 
 
 
@@ -181,6 +227,7 @@ button:hover {
 .scroller {
     color: var(--mred);
     font-weight: 400;
+    font-size: 1rem;
 }
 
 
@@ -197,12 +244,6 @@ button:hover {
     padding: 50px 10px 0;
     text-align: center;
 }
-
-
-
-
-
-/* GEN
 
 
 
@@ -345,7 +386,7 @@ button:hover {
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 700px) {
   #main-menu {
     display: none;
   }
@@ -355,6 +396,12 @@ button:hover {
   }
   #mmbnLogo {
       visibility: hidden;
+  }
+
+  .aboutInfo {
+      background-image: none;
+      width: 90vw;
+      justify-content: center;
   }
 }
 
